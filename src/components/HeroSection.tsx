@@ -56,9 +56,13 @@ const HeroSection = () => {
         }}
       />
 
-      <div className="container relative z-10 px-6">
+      <div className="container relative z-10 px-6 flex flex-col-reverse md:flex-row items-center gap-12 md:gap-16">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="max-w-3xl flex-1"
+        >
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           className="max-w-3xl"
