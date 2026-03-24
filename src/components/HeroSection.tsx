@@ -63,10 +63,6 @@ const HeroSection = () => {
           transition={{ duration: 0.8 }}
           className="max-w-3xl flex-1"
         >
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="max-w-3xl"
-        >
           <p className="font-mono text-primary text-sm mb-4 text-glow">
             {">"} initializing portfolio...
           </p>
@@ -96,6 +92,23 @@ const HeroSection = () => {
             >
               {">"} contact_me
             </a>
+          </div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          className="flex-shrink-0"
+        >
+          <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full border-2 border-primary/30 box-glow overflow-hidden">
+            <img
+              src={profileAvatar}
+              alt="Dinusha Sewwandi"
+              width={512}
+              height={512}
+              className="w-full h-full object-cover"
+            />
           </div>
         </motion.div>
       </div>
