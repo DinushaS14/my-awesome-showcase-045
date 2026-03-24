@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import profileAvatar from "@/assets/profile-avatar.png";
 
 const phrases = [
   "Cyber Security Specialist",
