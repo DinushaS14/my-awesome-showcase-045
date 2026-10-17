@@ -3,27 +3,89 @@ import { motion } from "framer-motion";
 const skills = [
   {
     category: "Cyber Skills",
-    items: ["TCP/IP", "OSI Model", "SIEM Tools", "EDR Tools", "Vulnerability Scanning", "Network Traffic Analysis"],
+    items: [
+      "Protocols",
+      "TCP/IP",
+      "OSI Model",
+      "Networks",
+      "Cyber Attacks",
+      "SIEM Tools",
+      "EDR Tools",
+      "Vulnerability Scanning",
+      "Network Traffic Analysis",
+      "Virtualization (VirtualBox)",
+      "Network Configurations",
+      "Agile Methodologies",
+    ],
+  },
+  {
+    category: "Security Platforms",
+    items: [
+      "Microsoft Sentinel",
+      "FortiSIEM",
+      "Trellix (McAfee) SIEM",
+      "CrowdStrike Falcon EDR",
+      "CrowdStrike XDR",
+      "Cortex XDR",
+    ],
+  },
+  {
+    category: "Security Operations",
+    items: [
+      "Security Monitoring",
+      "Incident Triage",
+      "Alert Investigation",
+      "Case Escalation",
+      "Log Analysis",
+    ],
   },
   {
     category: "OS & Frameworks",
     items: ["Kali Linux", "Windows", "Ubuntu", "Metasploit"],
   },
   {
-    category: "Programming",
-    items: ["C", "Java", "Python", "Bash/Shell"],
+    category: "Servers",
+    items: ["Windows Server 2016", "Windows Server 2022"],
   },
   {
-    category: "Web Development",
+    category: "Programming & Scripting",
+    items: ["C", "Java", "Python", "R", "Bash/Linux Shell (basics)"],
+  },
+  {
+    category: "Web Languages",
     items: ["HTML", "CSS", "Tailwind CSS", "JavaScript", "React", "PHP"],
   },
   {
     category: "Tools & Platforms",
-    items: ["Burp Suite", "Nmap", "Wireshark", "TryHackMe", "HackTheBox", "PicoCTF"],
+    items: [
+      "TryHackMe",
+      "Hack The Box",
+      "Burp Suite",
+      "Nmap",
+      "Wireshark",
+      "GitHub",
+      "PicoCTF",
+      "SQL",
+      "Microsoft 365",
+      "Canva",
+      "Figma",
+      "LetsDefend",
+      "Weka",
+    ],
   },
   {
     category: "Cloud & DevOps",
     items: ["Azure", "Google Cloud"],
+  },
+  {
+    category: "Soft Skills",
+    items: [
+      "Good Communication",
+      "Leadership",
+      "Team Spirit",
+      "Good Attitude",
+      "Problem Solving",
+    ],
   },
 ];
 
@@ -52,7 +114,7 @@ const SkillsSection = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
+              transition={{ delay: i * 0.08 }}
               className="bg-card border border-border rounded-sm p-6 hover:border-glow transition-all group"
             >
               <h3 className="font-mono text-primary text-sm mb-4 text-glow">

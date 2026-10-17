@@ -59,6 +59,10 @@
     @apply bg-background text-foreground font-body;
   }
 
+  section[id] {
+    scroll-margin-top: 5rem;
+  }
+
   ::selection {
     background: hsl(140 100% 50% / 0.3);
     color: hsl(120 100% 95%);

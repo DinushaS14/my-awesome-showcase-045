@@ -1,8 +1,9 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import SkillsSection from "@/components/SkillsSection";
+import ExperienceSection from "@/components/ExperienceSection";
 import ProjectsSection from "@/components/ProjectsSection";
-import CertificationsSection from "@/components/CertificationsSection";
+import EducationSection from "@/components/EducationSection";
 import ContactSection from "@/components/ContactSection";
 
 const Index = () => {
@@ -11,13 +12,14 @@ const Index = () => {
       <Navbar />
       <HeroSection />
       <SkillsSection />
+      <ExperienceSection />
       <ProjectsSection />
-      <CertificationsSection />
+      <EducationSection />
       <ContactSection />
       <footer className="border-t border-border py-8">
         <div className="container px-6 text-center">
           <p className="font-mono text-xs text-muted-foreground">
-            © 2025 Dinusha Sewwandi. Built with passion for cybersecurity.
+            © 2026 Dinusha Sewwandi. Built with passion for cybersecurity.
           </p>
         </div>
       </footer>
