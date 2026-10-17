@@ -87,7 +87,7 @@ const ContactSection = () => {
                 <span className="text-foreground">whoami</span>
               </p>
               <p className="text-muted-foreground pl-4">
-                Cyber Security Undergraduate @ NSBM Green University
+                Cyber Security Graduate | Junior SOC Analyst @ Cryptogen
               </p>
               <p className="mt-4">
                 <span className="text-primary">dinusha@portfolio</span>
