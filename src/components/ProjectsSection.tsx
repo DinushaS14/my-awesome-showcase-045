@@ -3,40 +3,69 @@ import { ExternalLink } from "lucide-react";
 
 const projects = [
   {
-    title: "5G & 6G Security Research",
+    title: "ShieldX: Unified Identity Protection System",
     description:
-      "Academic study on next-generation security threats and defense mechanisms. Proposed a multi-layered security framework using post-quantum cryptography and zero trust architecture.",
-    tech: ["5G Security", "Threat Modeling", "Post-Quantum Crypto", "Zero Trust", "AI Security"],
+      "Full-stack email security platform built as my final year project. Checks domain authentication (SPF, DKIM, DMARC), flags blacklisted mail servers, and uses NLP to detect phishing and BEC emails. Suspicious emails are auto-quarantined, and each domain gets a Security DNA risk score shown on an admin dashboard.",
+    tech: ["Python", "FastAPI", "React", "Tailwind CSS", "PostgreSQL", "Docker", "NLP"],
+    tag: "Final Year Project",
   },
   {
-    title: "Network Traffic Analyzer",
+    title: "Research Project (5G & 6G Security)",
     description:
-      "Real-time network traffic capture and analysis tool to detect suspicious IP activity. Built an interactive web interface for protocol-level visualization.",
-    tech: ["Wireshark", "Python", "Scapy", "React", "Tailwind CSS"],
+      "Academic study on next-generation security threats and defense mechanisms in 5G and emerging 6G networks. Identified key vulnerabilities and proposed a multi-layered security framework using advanced cryptographic and trust models.",
+    tech: [
+      "5G Security",
+      "6G Threat Modeling",
+      "Post-Quantum Cryptography",
+      "Zero Trust Architecture",
+      "AI-Enhanced Security",
+    ],
+    tag: "Research",
   },
   {
-    title: "Password Security Analyzer",
+    title: "Network Forensic Investigation Project",
     description:
-      "Web tool evaluating password strength via entropy analysis and breach detection using privacy-preserving k-anonymity with Have I Been Pwned API.",
-    tech: ["Python", "Flask", "HIBP API", "SHA-1", "k-Anonymity"],
-  },
-  {
-    title: "Network Forensic Investigation",
-    description:
-      "Full forensic analysis on a PCAP file to identify malicious activity. Analyzed 94,000+ packets while maintaining forensic integrity through evidence hashing.",
-    tech: ["Wireshark", "TCP Analysis", "DNS Correlation", "SHA-256"],
+      "Performed a full forensic analysis on a PCAP file to identify malicious activity and reconstruct network topology. Analyzed over 94,000 packets while maintaining forensic integrity through evidence hashing.",
+    tech: [
+      "Wireshark",
+      "HTTP/TCP Analysis",
+      "ARP",
+      "DNS Correlation",
+      "SHA-1",
+      "MD5",
+      "SHA-256",
+    ],
+    tag: "Forensics",
   },
   {
     title: "URL Phishing Detector",
     description:
-      "Python tool to detect phishing URLs using domain age checks, keyword analysis, and risk scoring. Designed for pen-testing workflows in Kali Linux.",
-    tech: ["Python", "Kali Linux", "WHOIS", "URL Parsing"],
+      "Developed a Python-based tool to detect phishing URLs using domain age checks, keyword analysis, and risk scoring. Designed for penetration testing workflows in a Kali Linux environment.",
+    tech: ["Python", "Kali Linux", "WHOIS Analysis", "URL Parsing", "Phishing Detection"],
+    tag: "Tooling",
   },
   {
-    title: "Cyber Security Lab Work",
+    title: "Simple Keylogger (Educational Project)",
     description:
-      "Hands-on labs covering ethical hacking, web attacks, cryptography, and system security. Practical experience with real-world tools and defense techniques.",
-    tech: ["Metasploit", "XSS", "SQL Injection", "Cryptography", "Steganography"],
+      "Built an educational Python keylogger to understand event-driven programming and system input monitoring. Implemented real-time keystroke logging with ethical and academic use considerations.",
+    tech: ["Python", "pynput", "Event-Driven Programming", "Cross-Platform Development"],
+    tag: "Learning",
+  },
+  {
+    title: "Cyber Security Essentials – Lab Work",
+    description:
+      "Hands-on cybersecurity lab work covering ethical hacking, web attacks, cryptography, and system security. Gained practical experience identifying vulnerabilities, exploiting them ethically, and applying security controls.",
+    tech: [
+      "Kali Linux",
+      "Metasploit Framework",
+      "OpenSSL",
+      "XSS",
+      "SQL Injection",
+      "Cryptography",
+      "Steganography",
+      "Linux Permissions",
+    ],
+    tag: "Lab Work",
   },
 ];
 
@@ -69,9 +98,14 @@ const ProjectsSection = () => {
               className="bg-card border border-border rounded-sm p-6 hover:border-glow transition-all group"
             >
               <div className="flex items-start justify-between mb-3">
-                <h3 className="font-heading text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
-                  {project.title}
-                </h3>
+                <div>
+                  <span className="inline-block font-mono text-[10px] uppercase tracking-wider text-primary/70 bg-primary/5 border border-primary/10 px-2 py-0.5 rounded-sm mb-2">
+                    {project.tag}
+                  </span>
+                  <h3 className="font-heading text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
+                    {project.title}
+                  </h3>
+                </div>
                 <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors flex-shrink-0 mt-1" />
               </div>
               <p className="text-muted-foreground text-sm mb-4 leading-relaxed">

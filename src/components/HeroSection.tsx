@@ -3,10 +3,10 @@ import { useEffect, useState } from "react";
 import profileAvatar from "@/assets/profile-avatar.png";
 
 const phrases = [
-  "Cyber Security Specialist",
-  "Ethical Hacker",
-  "Network Analyst",
-  "Security Researcher",
+  "Junior SOC Analyst",
+  "Cyber Security Graduate",
+  "Threat Intelligence",
+  "Security Monitoring",
 ];
 
 const HeroSection = () => {
@@ -76,8 +76,9 @@ const HeroSection = () => {
             <span className="text-primary animate-blink">█</span>
           </div>
           <p className="text-muted-foreground max-w-xl mb-10 leading-relaxed">
-            Final-year Cyber Security undergraduate with a strong foundation in
-            network security, ethical hacking, and real-world threat analysis.
+            Cyber Security graduate and Junior SOC Analyst at Cryptogen, with
+            hands-on experience in SIEM/XDR monitoring, threat intelligence, and
+            incident response.
           </p>
           <div className="flex gap-4 flex-wrap">
             <a
